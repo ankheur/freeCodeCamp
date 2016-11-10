@@ -1,8 +1,8 @@
 function spinalCase(str) {
   
-  var regexMaj = /\B[A-Z]/g;
+  var regexMaj = /\B[A-Z]/g; //match les majuscules précédés d'une lettre
   
-  function toHyphen(match){
+  function toHyphen(match){ //sépare les mots commençant par une majuscule
     return '-'+match;
   }
   
@@ -10,4 +10,4 @@ function spinalCase(str) {
   
 }
 
-spinalCase('The_Andy_Griffith_Show');
+spinalCase('theCode_Is-working Properly');
